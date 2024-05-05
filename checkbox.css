@@ -1,0 +1,131 @@
+/* 5 checkbox */
+.HyperMD-list-line input[type="checkbox"] {
+  -webkit-appearance: none;
+  box-sizing: border-box;
+  border: 1px solid var(--text-normal);
+  position: relative;
+  width: 16px;
+  height: 16px;
+  margin: 0;
+  margin-right: 4px;
+  margin-bottom: 2px;
+  transition: background-color 200ms ease-out 0s;
+  cursor: pointer;
+  filter: none;
+  border-radius: 4px;
+}
+
+.HyperMD-list-line input[type="checkbox"]:checked {
+  border: none !important;
+  background-color: var(--interactive-accent) !important;
+}
+
+.HyperMD-list-line input[type="checkbox"]:checked::before {
+  position: absolute;
+  color: white;
+  text-align: center;
+  font-weight: 900;
+  line-height: 15px;
+  width:12px;
+  left:2px;
+  right:2px;
+}
+
+/* SVG check mark for done ('- [x]') */
+.HyperMD-list-line input[data-task="x"]:checked::before,
+.HyperMD-list-line input[data-task="X"]:checked::before {
+  content: '';
+  top: 2px;
+  bottom: 2px;
+  background-color: white;
+  -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 14 14'%3E%3Cpolygon points='5.5 11.9993304 14 3.49933039 12.5 2 5.5 8.99933039 1.5 4.9968652 0 6.49933039'%3E%3C/polygon%3E%3C/svg%3E");
+}
+
+/* SVG chevron right for deferred/scheduled ('- [>]') */
+.HyperMD-list-line input[data-task=">"]:checked::before {
+  content: '';
+  top:2px;
+  bottom:2px;
+  background-color: white;
+  -webkit-mask-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 14 14' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M8.12 7L3.26667 11.76L4.57333 13.0667L10.7333 7L4.57333 0.933332L3.26667 2.24L8.12 7Z'/%3E%3C/svg%3E");
+}
+
+/* text style for deferred/scheduled  ('- [>]') */
+.HyperMD-list-line input[data-task=">"]:checked ~ .cm-list-1,
+.HyperMD-list-line input[data-task=">"]:checked ~ .cm-list-2,
+.HyperMD-list-line input[data-task=">"]:checked ~ .cm-list-3  {
+  color: var(--text-normal);
+  text-decoration: none;
+  border-radius: 4px;
+  background-color: #30b8ff  !important;
+}
+
+/* greened background colour for deferred/scheduled ('- [>]') */
+.HyperMD-list-line input[data-task=">"]:checked {
+  background-color: #30b8ff !important;
+}
+
+
+
+/* SVG line for cancelled/non-task ('- [-]') */
+.HyperMD-list-line input[data-task="-"]:checked::before {
+  content: '';
+  top:2px;
+  bottom:2px;
+  background-color: white !important;
+  display:inline-block !important;
+  -webkit-mask-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 14 14' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='0.5' y='6.5' width='13' height='1'/%3E%3C/svg%3E");
+}
+
+/* text style for cancelled/non-task info task ('- [-]') */
+.HyperMD-list-line input[data-task="-"]:checked ~ .cm-list-1,
+.HyperMD-list-line input[data-task="-"]:checked ~ .cm-list-2,
+.HyperMD-list-line input[data-task="-"]:checked ~ .cm-list-3  {
+  color: var(--text-normal);
+  text-decoration: none;
+  border-radius: 4px;
+  background-color: var(--text-faint)  !important;
+}
+
+
+/* greyed-out background colour for cancelled/non-task ('- [-]') */
+.HyperMD-list-line input[data-task="-"]:checked {
+  background-color: var(--text-faint) !important;
+}
+
+/* '?' for question/more info task ('- [?]') */
+.HyperMD-list-line input[data-task="?"]:checked::before {
+  content: '?';
+}
+/* text style for question/more info task ('- [?]') */
+.HyperMD-list-line input[data-task="?"]:checked ~ .cm-list-1,
+.HyperMD-list-line input[data-task="?"]:checked ~ .cm-list-2,
+.HyperMD-list-line input[data-task="?"]:checked ~ .cm-list-3  {
+  color: var(--text-normal);
+  text-decoration: none;
+  border-radius: 4px;
+  background-color: #567cf2 !important;
+}
+/* yellow background colour for question/more info task ('- [?]') */
+.HyperMD-list-line input[data-task="?"]:checked {
+  background-color: #567cf2 !important;
+}
+
+
+/* '!' for important task ('- [!]') */
+.HyperMD-list-line input[data-task="!"]:checked::before{
+  content: '!' ;
+}
+/* text style for important task ('- [!]') */
+.HyperMD-list-line input[data-task="!"]:checked ~ .cm-list-1,
+.HyperMD-list-line input[data-task="!"]:checked ~ .cm-list-2,
+.HyperMD-list-line input[data-task="!"]:checked ~ .cm-list-3 {
+  color: var(--text-normal);
+  text-decoration: none;
+  border-radius: 4px;
+  background-color: #e73c4c !important;
+}
+/* red background colour for important task ('- [!]') */
+.HyperMD-list-line input[data-task="!"]:checked {
+  background-color: #e73c4c !important;
+}

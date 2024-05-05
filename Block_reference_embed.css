@@ -1,0 +1,22 @@
+/* Display embedded notes in line with other block elements */
+
+/* Remove the embed heading */
+.embed-title {
+    display: none;
+}
+
+/* Align embed text with normal text */
+.markdown-embed {
+    padding-left: 0px;
+    border-left: none;
+}
+
+/* Highlight the entire embed when hovering */
+/* NOTE: Tested approaches to highlight the embed only when hovering
+ * over the embed link. These conflicted with other styles and mouse
+ * events. I opted for the simpler approach and kept it subtle. */
+
+.markdown-embed:hover {
+    backdrop-filter: invert(1%);
+    box-shadow: 0 0 1px 3px rgba(136, 136, 136, 0.1);
+}

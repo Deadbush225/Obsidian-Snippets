@@ -1,0 +1,79 @@
+.tag[href="#Complexity/Hard"] {
+    font-size: 0;
+    padding: 0;
+    margin-bottom: 5px;
+}
+
+.tag[href="#Complexity/Hard"]:after {
+    font-size: 8pt;
+    font-weight: 600;
+    background-color: rgb(68, 62, 108);
+    color: rgb(232, 230, 227);
+    padding: 3px 3px 5px 4px !important;
+    border-radius: 3px;
+    letter-spacing: -0.00ch;
+    content: "Complexity: 🟥";
+}
+
+.tag[href="#Complexity/Medium"] {
+    font-size: 0;
+    padding: 0;
+    margin-bottom: 5px;
+}
+
+.tag[href="#Complexity/Medium"]:after {
+    font-size: 8pt;
+    font-weight: 600;
+    background-color: rgb(68, 62, 108);
+    color: rgb(232, 230, 227);
+    padding: 3px 3px 5px 4px !important;
+    border-radius: 3px;
+    content: "Complexity: 🟨";
+}
+
+.tag[href="#Complexity/Easy"] {
+    font-size: 0;
+    padding: 0;
+    margin-bottom: 5px;
+}
+
+.tag[href="#Complexity/Easy"]:after {
+    font-size: 8pt;
+    font-weight: 600;
+    background-color: rgb(68, 62, 108);
+    color: rgb(232, 230, 227);
+    padding: 3px 3px 5px 4px !important;
+    border-radius: 3px;
+    content: "Complexity: 🟩";
+}
+
+.tag[href*="#Project/"] {
+    /* font-size: 8pt !important;
+  font-weight: 700 !important;
+  background-color: rgb(165, 29, 42);
+  color: rgb(232, 230, 227);
+  padding: 3px 3px !important;
+  padding-top: 5px !important;
+  padding-bottom: 3px !important;
+  border-radius: 3px !important;
+  letter-spacing: -0.00ch; */
+    overflow-x: hidden;
+    /*text-indent: -8ch;
+  / font-size: 0;
+  padding: 0; */
+}
+
+.tag[href*="#Project/"] {
+    font-size: 8pt;
+    font-weight: 600;
+    background-color: rgb(32, 134, 55);
+    color: rgb(232, 230, 227);
+    padding: 3px 3px 4px 4px !important;
+    ;
+    border-radius: 3px;
+}
+
+.tag[href*="#Project/"]:after {
+    content: " 🚀";
+    font-size: 9pt
+}

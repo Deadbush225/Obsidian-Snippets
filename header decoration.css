@@ -1,0 +1,101 @@
+/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ SPACING ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+.HyperMD-header {
+    padding-top: 0.2% !important;
+    padding-bottom: 0.5% !important;
+}
+
+/* div.HyperMD-header.HyperMD-header-1.cm-line */
+.HyperMD-header::after {
+    content: "";
+    border-bottom: 1px solid;
+}
+
+/* .cm-header:not(.cm-formatting-header)::after */
+/* HyperMD-header HyperMD-header-2 cm-line */
+/* .cm-header[class="cm-header cm-header-2"]::after { */
+
+.HyperMD-header::after {
+    display: block;
+}
+
+/* ━━━━━━━━━━━━━━━━━━━━━━━ PRISM CUSTOM COLOR SCHEME ━━━━━━━━━━━━━━━━━━━━━━━ */
+/* .HyperMD-header-1::after {
+    background: var(--color-red-tint);
+}
+
+.HyperMD-header-2::after {
+    background: var(--color-orange-tint);
+}
+
+.HyperMD-header-3::after {
+    background: var(--color-yellow-tint);
+}
+
+.HyperMD-header-4::after {
+    background: var(--color-green-tint);
+}
+
+.HyperMD-header-5::after {
+    background: var(--color-cyan-tint);
+}
+
+.HyperMD-header-6::after {
+    background: var(--color-purple-tint);
+} */
+
+/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ LEGACY ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+/* .cm-header-1:not(.cm-formatting-header-1),
+h1 {
+    width: 80%;
+
+    padding-bottom: 0.2%;
+    margin-bottom: 0.5%;
+    border-bottom: 1px solid;
+    display: inline-block;
+} */
+
+/* .cm-header-2:not(.cm-formatting-header-2), h2 {
+    width: 100%;
+
+    position: absolute;  
+    padding-bottom: 0.2%;
+    margin-bottom: 0.5%;
+    border-bottom: 1px solid var(--color-orange-tint);
+    display: inline-block;
+}
+
+.cm-header-3:not(.cm-formatting-header-3), h3 {
+    width: 100%;
+
+    padding-bottom: 0.2%;
+    margin-bottom: 0.5%;
+    border-bottom: 1px solid var(--color-yellow-tint);
+    display: inline-block;
+}
+
+.cm-header-4:not(.cm-formatting-header-4), h4 {
+    width: 95%;
+
+    padding-bottom: 0.2%;
+    margin-bottom: 0.5%;
+    border-bottom: 1px solid var(--color-green-tint);
+    display: inline-block;
+}
+
+.cm-header-5:not(.cm-formatting-header-5), h5 {
+    width: 95%;
+
+    padding-bottom: 0.2%;
+    margin-bottom: 0.5%;
+    border-bottom: 1px solid var(--color-cyan-tint);
+    display: inline-block;
+}
+
+.cm-header-6:not(.cm-formatting-header-6), h6 {
+    width: 80%;
+
+    padding-bottom: 0.2%;
+    margin-bottom: 0.5%;
+    border-bottom: 1px solid var(--color-purple-tint);
+    display: inline-block;
+} */

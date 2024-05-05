@@ -1,0 +1,18 @@
+.callout[data-callout="source-image"] .callout-title {
+    color: var(--color-blue-text);
+    background-color: var(--color-blue-base);
+    border-color: var(--color-blue-tint);
+}
+  
+.callout[data-callout="source-image"] .callout-icon {
+    color: var(--color-blue-text);
+}
+  
+.callout[data-callout="source-image"] .callout-content {
+    background-color: hsl(var(--color-blue-base-h) var(--color-blue-base-s) var(--color-blue-base-l) / 10%);
+    border-color: var(--color-blue-tint);
+}
+
+.callout[data-callout="source-image"] {
+    --callout-icon: lucide-image;
+}

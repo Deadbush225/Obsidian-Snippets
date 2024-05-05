@@ -1,0 +1,3 @@
+.cm-line:has(+ .cm-table-widget) {
+    display: none;
+}
